@@ -30,4 +30,4 @@ jobs:
     - name: Installing surge
       run: npm install -g surge
     - name: Deploying surge
-      run: surge ./React2020Sample.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
